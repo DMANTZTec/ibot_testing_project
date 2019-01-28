@@ -1,0 +1,8 @@
+
+/*
+ * GET pcba-test.
+ */
+
+exports.pcba_test = function(req, res){
+  res.render('pcba_test', { title: 'Express' });
+};

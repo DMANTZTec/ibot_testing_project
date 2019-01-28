@@ -1,0 +1,23 @@
+@font-face {
+	font-family: 'Avenir Next';
+	src: url('../fonts/avenir/AvenirNextLTPro-Regular.eot');
+	src: url('../fonts/avenir/venirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/avenir/venirNextLTPro-Regular.woff2') format('woff2'),
+		 url('../fonts/avenir/venirNextLTPro-Regular.woff') format('woff'),
+		 url('../fonts/avenir/venirNextLTPro-Regular.ttf') format('truetype'),
+		 url('../fonts/avenir/venirNextLTPro-Regular.svg#AvenirNextLTPro-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir Next';
+	src: url('../fonts/avenir/venirNextLTPro-Bold.eot');
+	src: url('../fonts/avenir/venirNextLTPro-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/avenir/venirNextLTPro-Bold.woff2') format('woff2'),
+		 url('../fonts/avenir/venirNextLTPro-Bold.woff') format('woff'),
+		 url('../fonts/avenir/venirNextLTPro-Bold.ttf') format('truetype'),
+		 url('../fonts/avenir/venirNextLTPro-Bold.svg#AvenirNextLTPro-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
