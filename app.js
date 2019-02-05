@@ -25,18 +25,16 @@ var app = express();
 app.set('port', process.env.PORT || 3028);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
-app.use(express.favicon());
-app.use(express.logger('dev'));
-app.use(express.bodyParser());
-app.use(express.methodOverride());
-app.use(app.router);
+//app.use(express.favicon());
+//app.use(express.logger('dev'));
+//app.use(express.bodyParser());
+//app.use(express.methodOverride());
+//app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'src')));
-
-// development only
-if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
-}
+/*app.use('/', index);
+app.use('/users', users);
+app.use('/index',index);
 app.get('/home', home.home);
 app.get('/settings', settings.settings);
 app.get('/pcba_test', pcba_test.pcba_test);
@@ -48,6 +46,25 @@ app.get('/user_input', user_input.user_input);
 app.get('/test_failure', test_failure.test_failure);
 app.get('/test_success', test_success.test_success);
 app.get('/', routes.index);
+app.get('/users', user.list);
+app.get('/users', user.list);*/
+// development only
+//if ('development' == app.get('env')) {
+ // app.use(express.errorHandler());
+//}
+app.get('/home', home.home);
+app.get('/settings', settings.settings);
+app.get('/pcba_test', pcba_test.pcba_test);
+app.get('/following_instructions', following_instructions.following_instructions);
+app.get('/instruction_pannel', instruction_pannel.instruction_pannel);
+app.get('/running', running.running);
+app.get('/critical_error', critical_error.critical_error);
+app.get('/user_input', user_input.user_input);
+app.get('/test_failure', test_failure.test_failure);
+app.get('/test_success', test_success.test_success);
+app.get('/', routes.index);
+app.get('/index', routes.index);
+
 app.get('/users', user.list);
 app.get('/users', user.list);
 

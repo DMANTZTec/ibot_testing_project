@@ -12,7 +12,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Follow the Instructions PCBA Test</title>
+	<title>Test Failure</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	
@@ -21,11 +21,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800|Nunito:400,800" rel="stylesheet">
 	
 	<!-- BOOTSTRAP -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-	<link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="src/libraries/bootstrap/css/bootstrap.min.css">
 	
 	<!-- STYLESHEET -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="src/css/style.css">
 	
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,15 +38,15 @@
 
 <body class="screen-blue">
 	
-	<section class="full-screen position-relative padding-0" id="follow-instruct-pannel">
-       <a href="index" class="previous">&laquo; Previous</a>
+	<section class="full-screen position-relative padding-0" id="test-failure">
+       <a href="index.html" class="previous">&laquo; Previous</a>
 		<!-- HEADER TO IBOT : BEGIN -->
 		<div class="screen-header padding-left-30">
 			<div class="row">
 				<div class="container-fluid">
 					<div class="col-md-6">
 						<div class="left-padding">
-							<img src="img/scan-barcode.png" class="left-icon">
+							<img src="src/img/scan-barcode.png" class="left-icon">
 							<table class="header-list-table scan-list" cellpadding="">
 								<tr>
 									<th>Device ID:</th>
@@ -65,7 +65,7 @@
 					</div>
 					<div class="col-md-6">
 						<div class="left-padding">
-							<img src="img/jig.png" class="left-icon">
+							<img src="src/img/jig.png" class="left-icon">
 							<table class="header-list-table jig-list" cellpadding="">
 								<tr>
 									<th>Jig Type:</th>
@@ -87,36 +87,35 @@
 		</div>
 		<!-- HEADER TO IBOT : BEGIN -->
 
-		<div class="jig-steps-wrapper padding-left-30">
+		<div class="jig-steps-wrapper padding-left-50">
 			<div class="row">
 				<div class="container-fluid">
-					<h2 class="text-align-center">Follow the Instructions to Place the  PCBA on the Testing Jig</h2>
-					<div class="col-md-7">
-						<ul class="list-follow">
-							<li>Step 1: Ensure that the lever is completely open</li>
-							<li>Step 2: Open the lid</li>
-							<li>Step 3: Place the Base Board into the fixture in SOP</li>
-							<li>Step 4: Close the lid</li>
-							<li>Step 5: Look the Lid as mentioned in SOP</li>
-							<li>Step 6: Ensure Lock and pull the lever down</li>
-						</ul>
+					<div class="test-result">
+						<h2>Test Result: Failed</h2>
+						<img src="src/img/faild.png" class="hive-logo">
+						<p class="text">You can Now Remove the Device</p>
+						<button class="btn btn-wide btn-warning">Start New Test</button>
 					</div>
-					<div class="col-md-5">
-						<img src="https://dummyimage.com/300x200/FFFFFF/111ed6.png">
+					<div class="test-summary">
+						<h2 class="padding-left-30">Test Summary:</h2>
+						<div class="Summary-list">
+							<ul class="glance-list">
+								<li>5V Regulator Testing</li>
+								<li>3.3V Regulator Testing</li>
+								<li>UART1 Testing</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div align="center" class="margin-top-20">
-			<button class="btn btn-wide btn-warning">Start Test</button>
-		</div>
-
+		
 		<!-- IBOT LOGO LEFT ALIGN : BEGIN -->
-		<img src="img/ibot-logo.png" class="ibot-logo">
+		<img src="src/img/ibot-logo.png" class="ibot-logo">
 		<!-- IBOT LOGO LEFT ALIGN : END -->
 
 		<!-- HIVE LOGO RIGHT ALIGN : BEGIN -->
-		<a href="settings"><img src="hive-connected.png" class="hive-connected"></a>
+		<a href="settings"><img src="src/img/hive-connected.png" class="hive-connected"></a>
 		<!-- IBOT LOGO LEFT ALIGN : END -->
 	</section>
 	
@@ -133,15 +132,15 @@
 	
 	<!-- JQUERY JS : BEGIN -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="libraries/jquery-1.11.2/jquery-1.11.2.min.js"><\/script>')</script>
+	<script>window.jQuery || document.write('<script src="src/libraries/jquery-1.11.2/jquery-1.11.2.min.js"><\/script>')</script>
 	<!-- JQUERY JS : END -->
 	
 	<!-- BOOTSTRAP V-3.3.7 CUSTOMIZED JS : BEGIN -->
-	<script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+	<script src="src/libraries/bootstrap/js/bootstrap.min.js"></script>
 	<!-- BOOTSTRAP V-3.3.7 CUSTOMIZED JS : END -->
 	
 	<!-- CUSTOM JS : BEGIN -->
-	<script src="js/main.js"></script>
+	<script src="src/js/main.js"></script>
 	<!-- CUSTOM JS : END -->
 	
 </body>
